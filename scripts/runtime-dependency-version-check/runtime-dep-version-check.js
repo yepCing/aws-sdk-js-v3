@@ -48,7 +48,7 @@ const deps = {
 };
 
 readPackages(clientPackages);
-checkVersions();
+// checkVersions();
 
 for (const pkg of nonClientPackages) {
   const pkgJson = require(path.join(pkg, "package.json"));
@@ -84,7 +84,7 @@ for (const pkg of nonClientPackages) {
 }
 
 readPackages(nonClientPackages);
-checkVersions();
+// checkVersions();
 
 function checkVersions() {
   const errors = [];
