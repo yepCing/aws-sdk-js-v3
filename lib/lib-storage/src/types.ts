@@ -36,6 +36,7 @@ export interface Configuration {
    * the upload will drop parts that have failed.
    */
   leavePartsOnError: boolean;
+  maxAttempts: number;
 
   /**
    * The tags to apply to the object.
